@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href='favicon-256.png'  type='image/x-icon'>
+
+	<title>Client Page For adding Events for users.</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container my-5">
+		<div class="row">
+			<h2 class="mx-auto text-info">Client Page for adding User Events</h2>
+		</div>
+		<div class="row my-4">
+			<div class="col-md-6 mx-auto">
+				<div class="form-group">
+					<label for="email">
+						Email
+					</label>
+					<input type="email" name="email" class="form-control" placeholder="Email" id="email">
+				</div>
+			</div>	
+		</div>
+		<div class="row my-4">
+			<div class="col-md-6 mx-auto">
+				<table class="table">
+					<tr>
+						<th>Event Name</th>
+						<th class="text-center">Action</th>
+					</tr>
+					<tr>
+						<td>Added To Cart</td>
+						<td class="text-right ">
+							<button class="btn btn-primary" onclick="addEvent("Add to Cart", {"item":"shoes"})>
+							Add Event</button></td>
+					</tr>
+					<tr>
+						<td>Item Viewed</td>
+						<td class="text-right"><button class="btn btn-success">Add Event</button></td>
+					</tr>
+					<tr>
+						<td>Searched</td>
+						<td class="text-right"><button class="btn btn-info">Add Event</button></td>
+					</tr>
+						<tr>
+						<td>Promotion Applied</td>
+						<td class="text-right"><button class="btn btn-primary">Add Event</button></td>	
+					</tr>
+					<tr>
+						<td>Referral Coupon</td>
+						<td class="text-right"><button class="btn btn-success">Add Event</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+        var _und = _und || {event: [], profile: [], account: [], onUserLogin: [], notifications: []};
+        // replace with the UND_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+        _und.account.push({"id": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJldmVudF9zaGl2MTdAdW5kLmNvbSIsInVzZXJJZCI6IjMwIiwiY2xpZW50SWQiOiIxNSIsInJvbGVzIjpbIlJPTEVfRVZFTlQiXSwiY3JlYXRlZCI6MTUyNjQ2MzQ1NTgyMCwiZXhwIjo5MjIzMzcyMDM2ODU0Nzc1fQ.L1-gtCrqHgZwDrZVe61M901eJHpmYDseopSM7w14mtq4mW0CfXStvHsmzkYATjELvCqU7Uc3ETVS5rjQmw7UvA"});
+        (function () {
+            var dsft = document.createElement('script');
+            dsft.type = 'text/javascript';
+            dsft.async = true;
+//                dsft.src =  ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            dsft.src = 'build/main.min.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(dsft, s);
+        })();
+        if ("geolocation" in navigator) {
+            /* geolocation is available */
+            console.log("Geolocation is available");
+//        navigator.geolocation.getCurrentPosition(function (position) {
+//            console.log(position.coords);
+//        });
+            watch_id = navigator.geolocation.watchPosition(function (position) {
+                console.log(position.coords);
+            });
+        } else {
+            /* geolocation IS NOT available */
+            console.log("Geolocation is not available");
+        }
+    </script>
+
+<script type="text/javascript" src='clientFile.js'></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
