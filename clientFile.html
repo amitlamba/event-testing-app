@@ -115,7 +115,7 @@
 								<td>Promotion Applied</td>
 								<td class="text-right">
 									<button class="btn btn-primary"
-									onclick="addEvent()">
+									onclick='addEvent("Promotion Applied", {"couponCode":"NEW50"})'>
 										Add Event
 									</button>
 								</td>	
@@ -135,9 +135,9 @@
 			</div>
 
 		<script type="text/javascript">
-		        var _und = _und || {event: [], profile: [], account: [], onUserLogin: [], notifications: []};
+		        var _und = _und || {event: [], profile: [], account: [], login: [], notifications: []};
 		        // replace with the UND_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
-		        _und.account.push({"id": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJldmVudF9zaGl2MTdAdW5kLmNvbSIsInVzZXJJZCI6IjMwIiwiY2xpZW50SWQiOiIxNSIsInJvbGVzIjpbIlJPTEVfRVZFTlQiXSwiY3JlYXRlZCI6MTUyNjQ2MzQ1NTgyMCwiZXhwIjo5MjIzMzcyMDM2ODU0Nzc1fQ.L1-gtCrqHgZwDrZVe61M901eJHpmYDseopSM7w14mtq4mW0CfXStvHsmzkYATjELvCqU7Uc3ETVS5rjQmw7UvA"});
+		        _und.account.push({"id": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJldmVudF9zaGl2cHJhdGFwc0BnbWFpbC5jb20iLCJ1c2VySWQiOiI0IiwiY2xpZW50SWQiOiIyIiwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9FVkVOVCJdLCJjcmVhdGVkIjoxNTMwMDg5MzI2MjA5LCJleHAiOjkyMjMzNzIwMzY4NTQ3NzV9.JtaOy-P84KQqqC6aByco4mPV8lJCMyb75aOl5ady1Yx1lEQGkTk3KtqO4I03Ip7OQqHWo777fert9e8zzSscvQ"});
 		        (function () {
 		            var dsft = document.createElement('script');
 		            dsft.type = 'text/javascript';
